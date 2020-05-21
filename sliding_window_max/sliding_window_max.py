@@ -2,10 +2,26 @@
 Input: a List of integers as well as an integer `k` representing the size of the sliding window
 Returns: a List of integers
 '''
-def sliding_window_max(nums, k):
-    # Your code here
 
-    pass
+def sliding_window_max(nums, k):
+    i = 0
+    new_max  = []      
+    while i < len(nums) - 1:
+        window = [i for i in nums[i:k]]
+        if window:         
+            new_max.append(max(window))
+            i += 1
+            k += 1
+            print(i, k, window, new_max)
+        
+    return new_max
+            
+        
+    
+        
+            
+
+    
 
 
 if __name__ == '__main__':

@@ -57,7 +57,7 @@ class Test(unittest.TestCase):
 
         for x in answer[3:]:
             self.assertEqual(x, 0)
-
+# @unittest.skip("")
 
 if __name__ == '__main__':
     unittest.main()
